@@ -1026,7 +1026,7 @@ float: left;
 
 #nav li a {
 
-	color: #420;
+	color: #333;
 
 	display: block;
 
@@ -3406,7 +3406,7 @@ height:  500px !important;
 
 overflow: hidden;
 
-border: 8px solid #420;
+border: 8px solid #000;
 
 float: left;
 
@@ -3448,13 +3448,13 @@ content: "";
 
 .slide_title{
 
-color:  #000;
+
 
 	position: absolute;
 
 	top:360px;
 
-	color:  #420;
+	color:  #fff;
 
 	left: -4px;
 
@@ -3474,7 +3474,7 @@ color:  #000;
 
 	font-weight: bold;
 
-	text-shadow: 0 1px 0 rgba(255, 255, 255, 1);
+	text-shadow: 0 1px 0 rgba(0, 0, 0, .5);
 
 	line-height: 32px;
 
@@ -3556,15 +3556,15 @@ height:  30px;
 
 border-radius: 15px;
 
-border-bottom:  2px solid #975;
+border-bottom:  2px solid #aaa;
 
-border-top:  2px solid #420;
+border-top:  2px solid #333;
 
 box-shadow: inset 0 2px 6px rgba(0,0,0,.5);
 
 text-indent: -9000%;
 
-color: #420;
+color: #fff;
 
 position: relative;
 
@@ -3640,7 +3640,7 @@ transition: all .3s ease-in-out;
 
 	/*background-image: url(images/wood_1.png);*/
 
-	background-color:  #876;
+	background-color:  #000;
 
 	background-repeat: repeat;
 
@@ -3818,7 +3818,7 @@ transition: all .3s ease-in-out;
 
 .section.project_block p{
 
-color: #000;
+color: #fff;
 
 text-shadow: none;
 
@@ -3878,6 +3878,9 @@ clear:  both;
 
 }
 
+.project_grid h2, .project_grid h3, .project_grid h4, .project_grid h5, .project_grid h6 {
+	color:  #fff;
+}
 .project_grid .project{
 
 	width: 40%;
@@ -3904,7 +3907,7 @@ float: left;
 
 	margin: 2em 0;
 
-	background: rgba(0, 0, 0, .3);
+	background: #333;
 
 	padding: 1em;
 
@@ -3980,7 +3983,7 @@ clear: right;
 
 	position:  absolute;
 
-	color: #050200;
+	color: #fff;
 
 	padding: 3.3%;
 
@@ -3990,7 +3993,7 @@ clear: right;
 
 	/*background-image: url(images/wood_1.png);*/
 
-	background-color:  #876;
+	background-color:  #000;
 
     width: 96%;
 
@@ -4036,7 +4039,7 @@ clear: right;
 
 	bottom:  0;
 
-	color: #050200;
+	color: #fff;
 
 	padding: 3.3%;
 
@@ -4044,7 +4047,7 @@ clear: right;
 
 	/*background-image: url(images/wood_1.png);*/
 
-	background-color:  #876;
+	background-color:  #000;
 
 	width: 96%;
 
@@ -4056,7 +4059,7 @@ clear: right;
 
 .project_grid .project_description p{
 
-	color: #050200;
+	color: #fff;
 
 }
 

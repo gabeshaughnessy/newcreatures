@@ -22,11 +22,11 @@ add_action('genesis_after_content', 'project_grid');
 function project_grid(){
 get_template_part('grid', 'project');
 }
-add_action('genesis_after_content', 'creature_post_grid');
+//add_action('genesis_after_content', 'creature_post_grid');
 function creature_post_grid(){
 get_template_part('grid');
 }
-add_action('genesis_after_content','creature_authorbox');
+//add_action('genesis_after_content','creature_authorbox');
 function creature_authorbox(){
 get_template_part('authorbox');
 }

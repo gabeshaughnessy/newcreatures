@@ -6,7 +6,7 @@ $args =	array('post_type' => 'project' );
 $projects = new WP_Query($args); //Query to get the Projects
 ?>
 <div class="project_grid" id="project_grid_1">
-<h2 class="section_title">Projects</h2>
+<!--<h2 class="section_title">Projects</h2>-->
 <?php
 $total_posts = $projects->found_posts;
 // The Loop
