@@ -1,5 +1,6 @@
 .htaccess
 readme.html
+error_log
 php wizadry/
 wp-config.php
 wp-content/uploads/
