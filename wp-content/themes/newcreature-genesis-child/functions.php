@@ -53,7 +53,7 @@ function child_theme_setup() {
      wp_enqueue_script('scrollto', CHILD_URL.'/scripts/jquery.scrollTo.js', array('jquery'),'1', TRUE);
      
       wp_enqueue_script('localscroll', CHILD_URL.'/scripts/local_scroll.js', array('jquery', 'scrollto'),'1', TRUE);
-       wp_enqueue_script('menuscroll', CHILD_URL.'/scripts/menu_scroll.js', array('jquery', 'localcroll'),'1', TRUE);	
+       wp_enqueue_script('menuscroll', CHILD_URL.'/scripts/menu_scroll.js', array('jquery'),'1', TRUE);	
       wp_enqueue_script('slider_box', CHILD_URL.'/scripts/slider_box.js', array('jquery'),'1', TRUE);  
       wp_enqueue_script('dynamic_content', CHILD_URL.'/scripts/dynamic_content.js', array('jquery'),'1', TRUE);    
       wp_enqueue_script('disable_links', CHILD_URL.'/scripts/disable_links.js', array('jquery'),'1', TRUE);    
