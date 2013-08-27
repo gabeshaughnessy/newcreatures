@@ -1,12 +1,14 @@
 .htaccess
 readme.html
 error_log
+staging/
 php wizadry/
 wp-config.php
 wp-content/uploads/
 wp-content/plugins/
 wp-content/themes/twentyeleven/
 wp-content/themes/twentytwelve/
+wp-content/themes/twentythirteen/
 wp-content/themes/genesis/
 wp-content/themes/be-genesis-child/
 wp-content/themes/twentyten/
