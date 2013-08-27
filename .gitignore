@@ -6,6 +6,7 @@ php wizadry/
 wp-config.php
 wp-content/uploads/
 wp-content/plugins/
+!wp-content/plugins/new-creature-projects/
 wp-content/themes/twentyeleven/
 wp-content/themes/twentytwelve/
 wp-content/themes/twentythirteen/
