@@ -14,8 +14,23 @@
 */
 @import url("../snap/style.css");
 
-/* Arial Black */
+/* Set Up Fonts */
 
+body {
+  color: #222222;
+  background-color: #fefefe;
+  font-family: Arial, Verdana, Tahoma, sans-serif;
+  text-rendering: optimizeLegibility;
+  line-height: 1.65;
+}
+
+h1,h2,h3,h4,h5,h6, strong {
+  font-family: "Helvetica Neue", Helvetica, Arial, Verdana, Tahoma, sans-serif;
+}
+
+.button {
+	font-weight: 700;
+}
 @font-face {
 
 	font-family: 'ArialBlack';
@@ -30,3 +45,51 @@
 
 	}
 
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 400;
+  src: local('ArialBlack'), url('/fonts/arial_black/1h1h_black-webfont.eot#iefix') format('embedded-opentype'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.woff') format('woff'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.ttf')  format('truetype'),
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Merriweather';
+  font-style: normal;
+  font-weight: 900;
+  src: local('ArialBlack'), url('/fonts/arial_black/1h1h_black-webfont.eot#iefix') format('embedded-opentype'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.woff') format('woff'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.ttf')  format('truetype'),
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 700;
+  src: local('ArialBlack'), url('/fonts/arial_black/1h1h_black-webfont.eot#iefix') format('embedded-opentype'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.woff') format('woff'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.ttf')  format('truetype'),
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.svg#svgFontName') format('svg');
+}
+@font-face {
+  font-family: 'Helvetica Neue';
+  font-style: normal;
+  font-weight: 900;
+  src: local('ArialBlack'), url('/fonts/arial_black/1h1h_black-webfont.eot#iefix') format('embedded-opentype'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.woff') format('woff'), 
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.ttf')  format('truetype'),
+  
+  	     url('fonts/arial_black/1h1h_black-webfont.svg#svgFontName') format('svg');
+}
