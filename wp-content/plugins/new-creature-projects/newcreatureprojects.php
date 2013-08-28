@@ -11,7 +11,7 @@ License: GPL2
 add_action( 'init', 'nc_create_my_post_types' );
 
 function nc_create_my_post_types() {
-	register_post_type( 'Projects',
+	register_post_type( 'project',
 		array(
 			'labels' => array(
 				'name' => __( 'Projects' ),
@@ -65,5 +65,5 @@ function nc_create_metaboxes() {
 			)		),
 	);
  	
- 	require_once(CHILD_DIR . '/lib/metabox/init.php'); 
+ 	require_once( plugin_dir_path( __FILE__ ) . '/lib/metabox/init.php'); 
 }
