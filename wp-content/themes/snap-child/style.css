@@ -2606,12 +2606,12 @@ button {
 }
 /* line 10, assets/sass/_homepage-slider.scss */
 .page-template-homepage-php #main-header {
-  background-color: transparent;
+  background-color: rgba(255, 255, 255, 0.2);
   border: none;
   position: absolute;
   z-index: 1000;
   width: 100%;
-  height: 80px;
+  height: 120px;
   box-sizing: border-box;
 }
 /* line 19, assets/sass/_homepage-slider.scss */
@@ -2635,20 +2635,36 @@ button {
 .page-template-homepage-php .frame {
   max-width: 100%;
 }
+/* line 37, assets/sass/_homepage-slider.scss */
+.page-template-homepage-php #snap-nav ul {
+  border: none;
+}
+/* line 39, assets/sass/_homepage-slider.scss */
+.page-template-homepage-php #snap-nav ul li {
+  border: none;
+}
+/* line 42, assets/sass/_homepage-slider.scss */
+.page-template-homepage-php #snap-nav ul li a {
+  max-height: 40px;
+}
+/* line 45, assets/sass/_homepage-slider.scss */
+.page-template-homepage-php #snap-nav ul li ul {
+  border: none;
+}
 
 @media screen and (max-width: 768px) {
-  /* line 41, assets/sass/_homepage-slider.scss */
+  /* line 54, assets/sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     min-height: 0;
     height: 300px !important;
   }
-  /* line 45, assets/sass/_homepage-slider.scss */
+  /* line 58, assets/sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area img {
     height: auto;
   }
 
-  /* line 50, assets/sass/_homepage-slider.scss */
+  /* line 63, assets/sass/_homepage-slider.scss */
   .page-content.frame {
     box-sizing: border-box;
     padding: 24px;

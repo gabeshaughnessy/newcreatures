@@ -69,7 +69,7 @@ jQuery(window).resize(function(){
 				<?php endforeach; ?>
 			</ul>
 		</section>
-		<div class="frame page-content hide-for-large">
+		<div class="frame page-content hide-for-medium">
 		<div id="blurb">
 			<?php if ( empty( $post->post_content) && current_user_can( 'edit_page', get_the_ID() ) ) : ?>
 				<div class="placeholder-text">
