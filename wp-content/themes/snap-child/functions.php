@@ -13,4 +13,5 @@ function add_category_to_single($classes, $class) {
 	return $classes;
 }
 
+add_image_size( 'full-screen', 1600, 9999 );
 ?>
