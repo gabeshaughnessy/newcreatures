@@ -28,7 +28,7 @@ if (stristr($host, 'com') == FALSE){
     if ( NC_ENVIRONMENT != 'development' ) {
         // If this is staging or production
             // load ACF declarations
-            //require_once('functions/plugins/advanced-custom-fields/register-fields.php'); 
+            require_once('functions/plugins/advanced-custom-fields/register-fields.php'); 
         }
         else{            
             add_action( 'admin_menu', 'nc_acf_menu', 9 );
