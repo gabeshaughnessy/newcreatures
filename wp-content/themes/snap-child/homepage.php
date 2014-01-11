@@ -57,6 +57,21 @@ jQuery(window).resize(function(){
 							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
 								<a href="<?php echo esc_url( get_permalink( $id ) ); ?>" title="<?php echo esc_attr( strip_tags( get_the_title( $id ) ) ); ?>">
 							<?php endif; ?>
+							<?php 
+								//check if this post has a video in the custom field, if it does, check if it should be displayed in the slider, if it should, show the embed coe
+							$videos = array();
+							$videos['youtube_id'] = get_field('youtube_video_id', $id);
+							$videos['vimeo_id'] = get_field('vimeo_video_id', $id);
+							$videos['embed_code'] = get_field('video_embed_code', $id);
+							//error_log(print_r($videos, true));
+							if($videos['youtube_id'] != ''){
+								$video_embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videos['youtube_id'].'" frameborder="0" allowfullscreen></iframe>';
+							}
+
+							if(isset($video_embed)){
+								echo '<div class="sider-vid fit-vid">'.$video_embed.'</div>';
+							}
+							?>
 							<?php echo get_the_post_thumbnail( $id, 'full' ); ?>
 							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
 									<?php $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $id, get_the_ID() ); ?>
