@@ -67,7 +67,10 @@ jQuery(window).resize(function(){
 							if($videos['youtube_id'] != ''){
 								$video_embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videos['youtube_id'].'?enablejsapi=1 " frameborder="0" allowfullscreen></iframe>';
 							}
+							elseif($videos['vimeo_id'] != ''){
 
+								$video_embed = '<iframe src="//player.vimeo.com/video/'.$videos['vimeo_id'].'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"';
+							}
 							if($video_embed != ''){
 								echo '<div class="slider-vid fit-vid">'.$video_embed.'</div>';
 							}
