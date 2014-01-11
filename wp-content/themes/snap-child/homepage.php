@@ -60,16 +60,16 @@ jQuery(window).resize(function(){
 							<?php 
 								//check if this post has a video in the custom field, if it does, check if it should be displayed in the slider, if it should, show the embed coe
 							$videos = array();
+							$video_embed = '';
 							$videos['youtube_id'] = get_field('youtube_video_id', $id);
 							$videos['vimeo_id'] = get_field('vimeo_video_id', $id);
 							$videos['embed_code'] = get_field('video_embed_code', $id);
-							//error_log(print_r($videos, true));
 							if($videos['youtube_id'] != ''){
-								$video_embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videos['youtube_id'].'" frameborder="0" allowfullscreen></iframe>';
+								$video_embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videos['youtube_id'].'?enablejsapi=1 " frameborder="0" allowfullscreen></iframe>';
 							}
 
-							if(isset($video_embed)){
-								echo '<div class="sider-vid fit-vid">'.$video_embed.'</div>';
+							if($video_embed != ''){
+								echo '<div class="slider-vid fit-vid">'.$video_embed.'</div>';
 							}
 							?>
 							<?php echo get_the_post_thumbnail( $id, 'full' ); ?>
@@ -83,6 +83,7 @@ jQuery(window).resize(function(){
 					</li>
 				<?php endforeach; ?>
 			</ul>
+			<div id="slider-nav"></div>
 		</section>
 		<div class="frame page-content hide-for-medium">
 		<div id="blurb">
