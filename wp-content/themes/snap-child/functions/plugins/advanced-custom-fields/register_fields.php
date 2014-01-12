@@ -151,6 +151,26 @@ if(function_exists("register_field_group"))
 		'title' => 'Video Options',
 		'fields' => array (
 			array (
+				'key' => 'field_52d081d0ce554',
+				'label' => 'Video Options Message',
+				'name' => '',
+				'type' => 'message',
+				'message' => 'Use this metabox to add videos to the slider and for sharing on social media.',
+			),
+			array (
+				'key' => 'field_52d082acce559',
+				'label' => 'Show Video',
+				'name' => 'show_video',
+				'type' => 'checkbox',
+				'choices' => array (
+					'slider' => 'Show the embedded video in the homepage slider.',
+					'post-start' => 'Show the video at the top of the content.',
+					'social' => 'Display this video when sharing this page on social networks.',
+				),
+				'default_value' => '',
+				'layout' => 'vertical',
+			),
+			array (
 				'key' => 'field_52d216db7bf28',
 				'label' => 'Video Size',
 				'name' => 'video_size',
@@ -163,6 +183,43 @@ if(function_exists("register_field_group"))
 				'save_other_choice' => 0,
 				'default_value' => '',
 				'layout' => 'vertical',
+			),
+			array (
+				'key' => 'field_52d081f9ce555',
+				'label' => 'Youtube Video ID',
+				'name' => 'youtube_video_id',
+				'type' => 'text',
+				'instructions' => 'just the video id (the part after ?v= in the url of the video on youtube). It should be about eight letters or numbers.',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => 27,
+			),
+			array (
+				'key' => 'field_52d08252ce557',
+				'label' => 'Vimeo Video ID',
+				'name' => 'vimeo_video_id',
+				'type' => 'text',
+				'instructions' => 'Just the vimeo video ID from the url',
+				'default_value' => '',
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'formatting' => 'none',
+				'maxlength' => 12,
+			),
+			array (
+				'key' => 'field_52d08278ce558',
+				'label' => 'Video Embed Code',
+				'name' => 'video_embed_code',
+				'type' => 'textarea',
+				'instructions' => 'paste the full embed code for a video here.',
+				'default_value' => '',
+				'placeholder' => '',
+				'maxlength' => '',
+				'formatting' => 'html',
 			),
 		),
 		'location' => array (
@@ -203,5 +260,4 @@ if(function_exists("register_field_group"))
 		'menu_order' => 0,
 	));
 }
-
 ?>
