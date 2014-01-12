@@ -19,6 +19,7 @@
 		word-wrap: break-word;
 	}
 	img {
+		box-sizing: border-box;
 		@include for(small-screens) {
 			max-height: 285px;
 		}

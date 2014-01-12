@@ -57,8 +57,28 @@ jQuery(window).resize(function(){
 							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
 								<a href="<?php echo esc_url( get_permalink( $id ) ); ?>" title="<?php echo esc_attr( strip_tags( get_the_title( $id ) ) ); ?>">
 							<?php endif; ?>
-							<?php echo get_the_post_thumbnail( $id, 'full' ); ?>
-							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
+							<?php 
+								//check if this post has a video in the custom field, if it does, check if it should be displayed in the slider, if it should, show the embed coe
+							$videos = array();
+							$video_embed = '';
+							$videos['youtube_id'] = get_field('youtube_video_id', $id);
+							$videos['vimeo_id'] = get_field('vimeo_video_id', $id);
+							$videos['embed_code'] = get_field('video_embed_code', $id);
+							if($videos['youtube_id'] != ''){
+								$video_embed = '<iframe width="560" height="315" src="//www.youtube.com/embed/'.$videos['youtube_id'].'?enablejsapi=1 " frameborder="0" allowfullscreen></iframe>';
+							}
+							elseif($videos['vimeo_id'] != ''){
+
+								$video_embed = '<iframe src="//player.vimeo.com/video/'.$videos['vimeo_id'].'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
+							}
+							$show_video = get_field('show_video', $id);
+							$video_size = get_field('video_size', $id);
+							if($show_video != false){
+							if($video_embed != '' && in_array('slider', $show_video)){
+								echo '<div class="slider-vid fit-vid '.$video_size.'">'.$video_embed.'</div>';
+							}}
+							echo get_the_post_thumbnail( $id, 'full' ); 
+							if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
 									<?php $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $id, get_the_ID() ); ?>
 									<?php if ( '' !== $button_text ) : ?>
 										<button class="homepage-button"><?php echo esc_html( $button_text ); ?></button>
@@ -68,6 +88,7 @@ jQuery(window).resize(function(){
 					</li>
 				<?php endforeach; ?>
 			</ul>
+			<div id="slider-nav"></div>
 		</section>
 		<div class="frame page-content hide-for-medium">
 		<div id="blurb">
