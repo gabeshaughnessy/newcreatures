@@ -130,9 +130,9 @@ if(function_exists("register_field_group"))
 		'location' => array (
 			array (
 				array (
-					'param' => 'post_type',
+					'param' => 'post_category',
 					'operator' => '==',
-					'value' => 'post',
+					'value' => '9',
 					'order_no' => 0,
 					'group_no' => 0,
 				),
