@@ -35,7 +35,6 @@ if (stristr($host, 'com') == FALSE){
             function nc_acf_menu(){
                 add_submenu_page( 'edit.php?post_type=acf', __('Custom Fields','acf'), __('Custom Fields','acf'), 'manage_options', 'edit.php?post_type=acf');
                 add_submenu_page( 'edit.php?post_type=acf', __('Import ACF','acf'), __('Import ACF','acf'), 'manage_options', 'admin.php?import=wordpress');
-                require_once('functions/plugins/advanced-custom-fields/register_fields.php'); 
 
                 }
 
