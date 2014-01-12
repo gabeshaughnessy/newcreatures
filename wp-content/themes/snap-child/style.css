@@ -835,6 +835,36 @@ a[rel="next"]:after,
   padding-right: 0;
 }
 
+/* line 29, ../sass/_block-grid.scss */
+[class*="gallery-columns-"] .gallery-item {
+  box-sizing: border-box;
+  padding: 0 !important;
+}
+/* line 33, ../sass/_block-grid.scss */
+[class*="gallery-columns-"][class*="1"] .gallery-item {
+  width: 100% !important;
+}
+/* line 36, ../sass/_block-grid.scss */
+[class*="gallery-columns-"][class*="2"] .gallery-item {
+  width: 50% !important;
+}
+/* line 40, ../sass/_block-grid.scss */
+[class*="gallery-columns-"][class*="3"] .gallery-item {
+  width: 33% !important;
+}
+/* line 43, ../sass/_block-grid.scss */
+[class*="gallery-columns-"][class*="4"] .gallery-item {
+  width: 25% !important;
+}
+/* line 47, ../sass/_block-grid.scss */
+[class*="gallery-columns-"][class*="5"] .gallery-item {
+  width: 20% !important;
+}
+/* line 50, ../sass/_block-grid.scss */
+[class*="gallery-columns-"][class*="6"] .gallery-item {
+  width: 16.66% !important;
+}
+
 /*---------------------------------------------------------
  4. Elements (_elements.scss)
 -------------------------------------------------------- */

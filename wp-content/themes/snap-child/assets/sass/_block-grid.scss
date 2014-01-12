@@ -25,3 +25,29 @@
 	padding-right: 0;
 	}
 }
+[class*="gallery-columns-"]{
+	.gallery-item{
+		box-sizing:border-box;
+		padding: 0 !important;
+	}
+	&[class*="1"] .gallery-item{
+		width: 100% !important;
+	}
+	&[class*="2"] .gallery-item{
+		width: 50% !important;
+		
+	}
+	&[class*="3"] .gallery-item{
+		width: 33% !important;
+	}
+	&[class*="4"] .gallery-item{
+		width: 25% !important;
+		
+	}
+	&[class*="5"] .gallery-item{
+		width: 20% !important;
+	}
+	&[class*="6"] .gallery-item{
+		width: 16.66% !important;
+	}
+}
