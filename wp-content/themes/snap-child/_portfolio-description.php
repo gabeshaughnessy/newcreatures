@@ -8,7 +8,10 @@
 		<h4><?php the_title(); ?></h4>
 	</a>
 	<div class="portfolio-excerpt">
-		<?php the_excerpt(); ?>
+		<?php 
+		get_template_part('_portfolio-meta');
+        ?>
+
 	</div>
 	<?php get_template_part( '_portfolio-details' ); ?>
 	<?php if ( is_page_template( 'portfolio.php' ) ) : ?>

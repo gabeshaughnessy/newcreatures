@@ -35,6 +35,8 @@ if (stristr($host, 'com') == FALSE){
             function nc_acf_menu(){
                 add_submenu_page( 'edit.php?post_type=acf', __('Custom Fields','acf'), __('Custom Fields','acf'), 'manage_options', 'edit.php?post_type=acf');
                 add_submenu_page( 'edit.php?post_type=acf', __('Import ACF','acf'), __('Import ACF','acf'), 'manage_options', 'admin.php?import=wordpress');
+                require_once('functions/plugins/advanced-custom-fields/register_fields.php'); 
+
                 }
 
     }
@@ -74,5 +76,9 @@ $responsive_slides_options = add_filter( 'responsive_slides_options', 'mySliderO
 
 //ENQUEUE ADDITIONAL JAVASCRIPTS
 //wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );
+
+function nc_scripts(){
 wp_enqueue_script('child-theme', get_bloginfo("stylesheet_directory").'/assets/javascripts/child-theme.js', array( 'jquery' ), false);
+}
+add_action('wp_enqueue_script', 'nc_scripts');
 ?>

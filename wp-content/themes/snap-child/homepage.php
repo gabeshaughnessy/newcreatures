@@ -77,9 +77,8 @@ jQuery(window).resize(function(){
 							if($video_embed != '' && in_array('slider', $show_video)){
 								echo '<div class="slider-vid fit-vid '.$video_size.'">'.$video_embed.'</div>';
 							}}
-							?>
-							<?php echo get_the_post_thumbnail( $id, 'full' ); ?>
-							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
+							echo get_the_post_thumbnail( $id, 'full' ); 
+							if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
 									<?php $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $id, get_the_ID() ); ?>
 									<?php if ( '' !== $button_text ) : ?>
 										<button class="homepage-button"><?php echo esc_html( $button_text ); ?></button>

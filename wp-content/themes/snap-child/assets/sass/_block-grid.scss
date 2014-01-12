@@ -1,0 +1,27 @@
+[class*="block-grid-"]{
+	box-sizing: border-box;
+	float: left;
+	margin:0;
+	padding-right: 1em;
+	&[class*="2"]{
+		width: 50%;
+	}
+	&[class*="3"]{
+		width: 33%;
+	}
+	&[class*="4"]{
+		width: 25%;
+	}
+	&[class*="5"]{
+		width: 20%;
+	}
+	&[class*="6"]{
+		width: 16.66%;
+	}
+	&[class*="7"]{
+		width: 50%;
+	}
+	&:last-child{
+	padding-right: 0;
+	}
+}
