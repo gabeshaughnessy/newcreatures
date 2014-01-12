@@ -71,9 +71,13 @@ jQuery(window).resize(function(){
 
 								$video_embed = '<iframe src="//player.vimeo.com/video/'.$videos['vimeo_id'].'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"';
 							}
-							if($video_embed != ''){
-								echo '<div class="slider-vid fit-vid">'.$video_embed.'</div>';
-							}
+							$show_video = get_field('show_video', $id);
+							$video_size = get_field('video_size', $id);
+							error_log('video size: '. $video_size);
+							if($show_video != false){
+							if($video_embed != '' && in_array('slider', $show_video)){
+								echo '<div class="slider-vid fit-vid '.$video_size.'">'.$video_embed.'</div>';
+							}}
 							?>
 							<?php echo get_the_post_thumbnail( $id, 'full' ); ?>
 							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>

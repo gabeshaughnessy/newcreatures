@@ -2637,14 +2637,19 @@ button {
 }
 /* line 37, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid {
-  width: 60%;
+  width: 100%;
+  margin: 0;
+  z-index: 1;
   height: auto;
   position: absolute;
   text-align: center;
-  z-index: 1;
+}
+/* line 44, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .homepage-featured-area .slider-vid.centered {
+  width: 60%;
   margin: 100px 20%;
 }
-/* line 45, ../sass/_homepage-slider.scss */
+/* line 51, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav {
   position: fixed;
   bottom: -1px;
@@ -2653,7 +2658,7 @@ button {
   text-align: center;
   z-index: 1000;
 }
-/* line 52, ../sass/_homepage-slider.scss */
+/* line 58, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
   padding: 0 12px 8px;
   background: #fff;
@@ -2668,55 +2673,55 @@ button {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0);
   opacity: .5;
 }
-/* line 67, ../sass/_homepage-slider.scss */
+/* line 73, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav:hover {
   color: #400;
   opacity: 1;
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 75, ../sass/_homepage-slider.scss */
+/* line 81, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .frame {
   max-width: 100%;
 }
-/* line 78, ../sass/_homepage-slider.scss */
+/* line 84, ../sass/_homepage-slider.scss */
 .page-template-homepage-php #snap-nav ul {
   border: none;
 }
-/* line 80, ../sass/_homepage-slider.scss */
+/* line 86, ../sass/_homepage-slider.scss */
 .page-template-homepage-php #snap-nav ul li {
   border: none;
 }
-/* line 83, ../sass/_homepage-slider.scss */
+/* line 89, ../sass/_homepage-slider.scss */
 .page-template-homepage-php #snap-nav ul li a {
   max-height: 40px;
 }
-/* line 86, ../sass/_homepage-slider.scss */
+/* line 92, ../sass/_homepage-slider.scss */
 .page-template-homepage-php #snap-nav ul li ul {
   border: none;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 95, ../sass/_homepage-slider.scss */
+  /* line 101, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     min-height: 0;
     height: 300px !important;
   }
-  /* line 99, ../sass/_homepage-slider.scss */
+  /* line 105, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area img {
     height: auto;
   }
-  /* line 102, ../sass/_homepage-slider.scss */
+  /* line 108, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area .slider-vid {
     display: none;
   }
-  /* line 105, ../sass/_homepage-slider.scss */
+  /* line 111, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area #slider-nav {
     position: absolute;
     bottom: 10px;
   }
 
-  /* line 115, ../sass/_homepage-slider.scss */
+  /* line 121, ../sass/_homepage-slider.scss */
   .page-content.frame {
     box-sizing: border-box;
     padding: 24px;

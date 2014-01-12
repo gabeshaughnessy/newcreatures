@@ -35,12 +35,18 @@
 			right: 24px;
 		}
 		.slider-vid{
-			width: 60%;
+			width:100%;
+			margin:0;
+			z-index: 1;
 			height: auto;
 			position:absolute;
 			text-align: center;
-			z-index: 1;
+			&.centered{
+			width: 60%;
+			
+			
 			margin: 100px 20%;
+			}
 		}
 		#slider-nav{
 			position: fixed;
