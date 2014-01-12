@@ -807,27 +807,27 @@ a[rel="next"]:after,
   padding-right: 1em;
 }
 /* line 6, ../sass/_block-grid.scss */
-[class*="block-grid-"][class*="2"] {
+[class*="block-grid-"].block-grid-2 {
   width: 50%;
 }
 /* line 9, ../sass/_block-grid.scss */
-[class*="block-grid-"][class*="3"] {
+[class*="block-grid-"].block-grid-3 {
   width: 33%;
 }
 /* line 12, ../sass/_block-grid.scss */
-[class*="block-grid-"][class*="4"] {
+[class*="block-grid-"].block-grid-4 {
   width: 25%;
 }
 /* line 15, ../sass/_block-grid.scss */
-[class*="block-grid-"][class*="5"] {
+[class*="block-grid-"].block-grid-5 {
   width: 20%;
 }
 /* line 18, ../sass/_block-grid.scss */
-[class*="block-grid-"][class*="6"] {
+[class*="block-grid-"].block-grid-6 {
   width: 16.66%;
 }
 /* line 21, ../sass/_block-grid.scss */
-[class*="block-grid-"][class*="7"] {
+[class*="block-grid-"].block-grid-7 {
   width: 50%;
 }
 /* line 24, ../sass/_block-grid.scss */
@@ -841,27 +841,27 @@ a[rel="next"]:after,
   padding: 0 !important;
 }
 /* line 33, ../sass/_block-grid.scss */
-[class*="gallery-columns-"][class*="1"] .gallery-item {
+[class*="gallery-columns-"].gallery-columns-1 .gallery-item {
   width: 100% !important;
 }
 /* line 36, ../sass/_block-grid.scss */
-[class*="gallery-columns-"][class*="2"] .gallery-item {
+[class*="gallery-columns-"].gallery-columns-2 .gallery-item {
   width: 50% !important;
 }
 /* line 40, ../sass/_block-grid.scss */
-[class*="gallery-columns-"][class*="3"] .gallery-item {
+[class*="gallery-columns-"].gallery-columns-3 .gallery-item {
   width: 33% !important;
 }
 /* line 43, ../sass/_block-grid.scss */
-[class*="gallery-columns-"][class*="4"] .gallery-item {
+[class*="gallery-columns-"].gallery-columns-4 .gallery-item {
   width: 25% !important;
 }
 /* line 47, ../sass/_block-grid.scss */
-[class*="gallery-columns-"][class*="5"] .gallery-item {
+[class*="gallery-columns-"].gallery-columns-5 .gallery-item {
   width: 20% !important;
 }
 /* line 50, ../sass/_block-grid.scss */
-[class*="gallery-columns-"][class*="6"] .gallery-item {
+[class*="gallery-columns-"].gallery-columns-6 .gallery-item {
   width: 16.66% !important;
 }
 
