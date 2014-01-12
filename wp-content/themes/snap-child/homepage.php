@@ -69,11 +69,10 @@ jQuery(window).resize(function(){
 							}
 							elseif($videos['vimeo_id'] != ''){
 
-								$video_embed = '<iframe src="//player.vimeo.com/video/'.$videos['vimeo_id'].'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>"';
+								$video_embed = '<iframe src="//player.vimeo.com/video/'.$videos['vimeo_id'].'" width="800" height="450" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>';
 							}
 							$show_video = get_field('show_video', $id);
 							$video_size = get_field('video_size', $id);
-							error_log('video size: '. $video_size);
 							if($show_video != false){
 							if($video_embed != '' && in_array('slider', $show_video)){
 								echo '<div class="slider-vid fit-vid '.$video_size.'">'.$video_embed.'</div>';
