@@ -79,5 +79,5 @@ $responsive_slides_options = add_filter( 'responsive_slides_options', 'mySliderO
 function nc_scripts(){
 wp_enqueue_script('child-theme', get_bloginfo("stylesheet_directory").'/assets/javascripts/child-theme.js', array( 'jquery' ), false);
 }
-add_action('wp_enqueue_script', 'nc_scripts');
+add_action('wp_enqueue_scripts', 'nc_scripts');
 ?>
