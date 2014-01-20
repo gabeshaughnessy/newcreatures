@@ -1,0 +1,12 @@
+body {
+	//FULL-width layout overrride
+	.theme-container {
+	//OVERRIDE FOR FULL WIDTH
+	padding: 2rem 5px;
+}
+.frame {
+	max-width: 100%;
+	margin: 0 auto;
+	@extend .clear;
+}
+}

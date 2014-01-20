@@ -36,7 +36,22 @@ jQuery(window).resize(function(){
 		<?php $slider_post_ids = ( current_user_can( 'edit_theme_options' ) ) ? $featured_area->all_possible_slider_posts : $featured_area->slider_posts_with_post_thumbnails; ?>
 		<section class="homepage-featured-area frame">
 			<ul class="homepage-featured-area<?php if ( 'slider' === $featured_area->display_type_for_current_user ) : ?> homepage-featured-area-slides<?php endif;?>">
-				
+                <li>
+                    <?php if ( ! $featured_area->post_is_this_page( $post->ID ) ) : ?>
+                            <a href="<?php echo esc_url( get_permalink( $post->ID ) ); ?>" title="<?php echo esc_attr( strip_tags( get_the_title( $post->ID ) ) ); ?>">
+                    <?php endif; ?>
+                    <?php
+                    $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+                    echo '<img src="'.$image_url[0].'" width="100%" height="auto" />.';
+                    // echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+                    <?php if ( ! $featured_area->post_is_this_page( $post->ID ) ) : ?>
+                                    <?php $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $post->ID, get_the_ID() ); ?>
+                                    <?php if ( '' !== $button_text ) : ?>
+                                            <button class="homepage-button"><?php echo esc_html( $button_text ); ?></button>
+                                    <?php endif; ?>
+                            </a>
+                    <?php endif; ?>
+                </li>
 				<?php foreach ( $slider_post_ids as $id ) : ?>
 					<li>						
 							<?php if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
@@ -64,10 +79,34 @@ jQuery(window).resize(function(){
 							}}
 							echo get_the_post_thumbnail( $id, 'full' ); 
 							if ( ! $featured_area->post_is_this_page( $id ) ) : ?>
-									<?php $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $id, get_the_ID() ); ?>
+									<?php/* $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $id, get_the_ID() ); ?>
 									<?php if ( '' !== $button_text ) : ?>
 										<button class="homepage-button"><?php echo esc_html( $button_text ); ?></button>
-									<?php endif; ?>
+									<?php endif; */?>
+									<?php
+									//set up the title and description with a permalink
+									$headline_color = get_field('portfolio_headline_color', $id);
+									if(!isset($headline_color)){
+										$headline_color = "#eeeeee";
+									}
+									$details_bg = get_field('post_details_background', $id);
+									if(!isset($details_bg)){
+										$details_bg = "";
+									}
+									echo '<a class="learn-more" href="'.get_permalink($id).'"><div class="post-details" style="background:'.$details_bg.'" >';
+									$headline = get_field('portfolio_headline', $id);
+									if(empty($headline)){
+										$headline = get_the_title($id);
+									}
+									echo '<h2 class="post-title" style="color:'.$headline_color.'">'.$headline.'</h2>';
+
+									
+									$tagline = get_field('portfolio_tagline', $id);
+									if(!empty($tagline)){
+										echo '<p class="post-description" style="color:'.$headline_color.'">'.$tagline.'</p>';
+									}
+									echo '</div></a>';
+									?>
 								</a>
 							<?php endif; ?>
 					</li>

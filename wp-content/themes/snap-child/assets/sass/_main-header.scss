@@ -1,0 +1,161 @@
+//THE MAIN PAGE HEADER
+body {
+	#main-header[role=banner]{
+	border: none;
+	position: relative;
+	z-index: 1000;
+	width: 100%;
+	box-sizing: border-box;
+	@include dark-background;
+	height: 59px;
+	padding: 2px;
+	top: 0;
+
+	@media screen and (max-width: 900px){
+		top: auto;
+		background-color: transparent;
+		padding: 0;
+	}
+	.header-wrapper{
+		width: 100% !important;
+		max-width: 100%;
+		#nav{
+			position: relative;
+			z-index: 1;
+			#snap-nav{
+				.nav{
+					border: none;
+					.snap-menu-parent-item {
+						border: none;
+						a:before{
+
+							}
+						}
+					margin-right: 4em;
+					margin-top: 9px;
+					.menu-item{
+
+						border: none;
+						a{
+							font-family: 'ArialBlack';
+							font-weight: bold;
+							font-size: 18px;
+							color: #eee;
+							max-height: 40px;
+							border-bottom: none;
+							@media screen and (max-width: 900px){
+								@include dark-background;
+								
+							}
+							@media screen and (max-width:400px){
+								padding: 1em 2em;
+								font-size: 1em;
+							}
+							-webkit-transition: all .5s;
+							transition: all .5s;
+							
+
+						}
+						&:hover > a{
+									color:#fff;
+									text-shadow: 0 0 1px rgb(255,255,255);
+								}
+						.sub-menu{
+							border: none;
+							@media screen and (max-width:900px){
+								text-indent: 1.5em;
+							}
+							@media screen and (max-width:400px){
+								text-indent: .3em;
+							}
+							@include dark-background;
+							.menu-item{
+								border: none;
+
+								a{
+
+									line-height: 1.2;
+									font-size: 14px;
+									color: #aaa;
+									margin-bottom: 4px;
+									-webkit-transition: all .5s;
+									transition: all .5s;
+								@media screen and (max-width: 900px){
+									margin-bottom: 0;
+								}
+							
+								}
+								&:hover a{
+									color:#fff;
+									text-shadow: 0 0 1px rgb(255,255,255);
+								}
+							}
+						}
+					}
+					.current-menu-item {
+						a{
+							@media screen and (max-width: 900px){
+								@include dark-background;
+
+							}
+						}
+					}
+				@media screen and (max-width: 900px){
+					margin-right:0;
+					margin-top: 0;
+				}
+				}
+			}
+		}
+		.logo-wrapper{
+			.snap-site-title{
+				a{
+					color: #eee;
+					font-size: 1.5em;
+					-webkit-transition: color .5s;
+					transition: color .5s;
+					&:hover{
+						color: #fff;
+					}
+					&:active{
+						color: #e5e5e5;
+					}
+					@media screen and (max-width: 1024px){
+						font-size:1.35em;
+						line-height: 1.2;
+					}
+					@media screen and (max-width: 400px){
+						font-size:1em;
+						line-height: 1.5em;
+					}
+
+				}
+				@media screen and (max-width:900px){
+					padding: 4px 0 0 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					z-index: 0;
+					
+				}
+			}
+			
+			.snap-tagline {
+				margin-top: 0;
+				color: #fff;
+				display: none;
+			}
+		}
+	}
+}
+}
+#mobile-toggle {
+	span{
+		font-family:"ArialBlack";
+
+		&:before {
+			color:#fff;
+		}
+	}
+}

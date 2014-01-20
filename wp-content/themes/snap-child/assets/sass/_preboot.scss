@@ -134,6 +134,14 @@ $baseline-px: 18px;
 		// Return the property and its list of converted values
 		#{$property}: $rem-values; } }
 
+/* STYLES FOR NEW CREATURES */
+
+@mixin dark-background {
+	background-color: #555;
+	background-image: url('/wp-content/themes/snap-child/images/debut_dark.png');
+	background-repeat: repeat;
+}
+
 /*---------------------------------------------------------
  Extends (_preboot.scss)
 -------------------------------------------------------- */

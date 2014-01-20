@@ -224,24 +224,25 @@ textarea {
   vertical-align: top;
 }
 
+/* STYLES FOR NEW CREATURES */
 /*---------------------------------------------------------
  Extends (_preboot.scss)
 -------------------------------------------------------- */
-/* line 141, ../sass/_preboot.scss */
-.clear, .frame, .blog-wrapper, .pagination, .portfolio-post, #comments-nav {
+/* line 149, ../sass/_preboot.scss */
+.clear, .frame, .blog-wrapper, .pagination, body .frame, .portfolio-post, #comments-nav {
   zoom: 1;
 }
-/* line 144, ../sass/_preboot.scss */
+/* line 152, ../sass/_preboot.scss */
 .clear:before, .frame:before, .blog-wrapper:before, .pagination:before, .portfolio-post:before, #comments-nav:before, .clear:after, .frame:after, .blog-wrapper:after, .pagination:after, .portfolio-post:after, #comments-nav:after {
   display: table;
   content: "";
 }
-/* line 148, ../sass/_preboot.scss */
+/* line 156, ../sass/_preboot.scss */
 .clear:after, .frame:after, .blog-wrapper:after, .pagination:after, .portfolio-post:after, #comments-nav:after {
   clear: both;
 }
 
-/* line 152, ../sass/_preboot.scss */
+/* line 160, ../sass/_preboot.scss */
 .small-type, .snap-tagline, table, .alert, .placeholder-text, .wp-caption-text,
 dd.wp-caption-dd, .featured-image, .set-post, .pagination, .post-footer, .portfolio-description, .portfolio-details, .attachment-content, .archive .sub-desc,
 .search .sub-desc, #sidebar, #respond,
@@ -254,7 +255,7 @@ input, .wpcf7 {
   font-size: 0.88889rem;
 }
 @media screen and (min-width: 900px) {
-  /* line 152, ../sass/_preboot.scss */
+  /* line 160, ../sass/_preboot.scss */
   .small-type, .snap-tagline, table, .alert, .placeholder-text, .wp-caption-text,
   dd.wp-caption-dd, .featured-image, .set-post, .pagination, .post-footer, .portfolio-description, .portfolio-details, .attachment-content, .archive .sub-desc,
   .search .sub-desc, #sidebar, #respond,
@@ -266,13 +267,13 @@ input, .wpcf7 {
   }
 }
 
-/* line 160, ../sass/_preboot.scss */
+/* line 168, ../sass/_preboot.scss */
 .serif-type, h1, h4, h5, blockquote {
   font-family: Merriweather, Georgia, Times, "Times New Roman", serif;
   font-weight: 900;
 }
 
-/* line 164, ../sass/_preboot.scss */
+/* line 172, ../sass/_preboot.scss */
 .break, h1,
 h2,
 h3,
@@ -283,7 +284,7 @@ h6, pre, table {
   word-break: hyphenate;
 }
 
-/* line 168, ../sass/_preboot.scss */
+/* line 176, ../sass/_preboot.scss */
 .box-size, hr, .placeholder-text, .tile .post, textarea,
 select,
 input {
@@ -1468,7 +1469,7 @@ iframe {
  General classes (_patterns.scss)
 -------------------------------------------------------- */
 /* line 70, ../sass/_patterns.scss */
-.clear, .frame, .blog-wrapper, .pagination, .portfolio-post, #comments-nav {
+.clear, .frame, .blog-wrapper, .pagination, body .frame, .portfolio-post, #comments-nav {
   clear: both;
 }
 
@@ -1784,6 +1785,16 @@ div .aligncenter {
   color: #707070;
   margin-bottom: 22px;
   margin-bottom: 1.22222rem;
+}
+
+/* line 3, ../sass/_layout.scss */
+body .theme-container {
+  padding: 2rem 5px;
+}
+/* line 7, ../sass/_layout.scss */
+body .frame {
+  max-width: 100%;
+  margin: 0 auto;
 }
 
 /*---------------------------------------------------------
@@ -2660,6 +2671,197 @@ button {
     margin-right: 0;
   }
 }
+/* line 3, ../sass/_main-header.scss */
+body #main-header[role=banner] {
+  border: none;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #555;
+  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+  background-repeat: repeat;
+  height: 59px;
+  padding: 2px;
+  top: 0;
+}
+@media screen and (max-width: 900px) {
+  /* line 3, ../sass/_main-header.scss */
+  body #main-header[role=banner] {
+    top: auto;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+/* line 19, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper {
+  width: 100% !important;
+  max-width: 100%;
+}
+/* line 22, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav {
+  position: relative;
+  z-index: 1;
+}
+/* line 26, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav {
+  border: none;
+  margin-right: 4em;
+  margin-top: 9px;
+}
+/* line 28, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .snap-menu-parent-item {
+  border: none;
+}
+/* line 36, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item {
+  border: none;
+}
+/* line 39, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
+  font-family: 'ArialBlack';
+  font-weight: bold;
+  font-size: 18px;
+  color: #eee;
+  max-height: 40px;
+  border-bottom: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media screen and (max-width: 900px) {
+  /* line 39, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
+    background-color: #555;
+    background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 39, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
+    padding: 1em 2em;
+    font-size: 1em;
+  }
+}
+/* line 59, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item:hover > a {
+  color: #fff;
+  text-shadow: 0 0 1px white;
+}
+/* line 63, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
+  border: none;
+  background-color: #555;
+  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+  background-repeat: repeat;
+}
+@media screen and (max-width: 900px) {
+  /* line 63, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
+    text-indent: 1.5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 63, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
+    text-indent: .3em;
+  }
+}
+/* line 72, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item {
+  border: none;
+}
+/* line 75, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item a {
+  line-height: 1.2;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 4px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media screen and (max-width: 900px) {
+  /* line 75, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item a {
+    margin-bottom: 0;
+  }
+}
+/* line 88, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item:hover a {
+  color: #fff;
+  text-shadow: 0 0 1px white;
+}
+@media screen and (max-width: 900px) {
+  /* line 96, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .current-menu-item a {
+    background-color: #555;
+    background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 26, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+/* line 112, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
+  color: #eee;
+  font-size: 1.5em;
+  -webkit-transition: color .5s;
+  transition: color .5s;
+}
+/* line 117, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:hover {
+  color: #fff;
+}
+/* line 120, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:active {
+  color: #e5e5e5;
+}
+@media screen and (max-width: 1024px) {
+  /* line 112, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
+    font-size: 1.35em;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 112, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 111, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title {
+    padding: 4px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+/* line 144, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
+  margin-top: 0;
+  color: #fff;
+  display: none;
+}
+
+/* line 154, ../sass/_main-header.scss */
+#mobile-toggle span {
+  font-family: "ArialBlack";
+}
+/* line 157, ../sass/_main-header.scss */
+#mobile-toggle span:before {
+  color: #fff;
+}
+
 /* HOMEPAGE SLIDER TEMPLATE_________________________ */
 /* line 3, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .theme-container {
@@ -2669,17 +2871,25 @@ button {
   box-sizing: border-box;
   position: relative;
 }
-/* line 10, ../sass/_homepage-slider.scss */
-.page-template-homepage-php #main-header {
-  background-color: rgba(255, 255, 255, 0.2);
-  border: none;
-  position: absolute;
-  z-index: 1000;
-  width: 100%;
-  height: 120px;
-  box-sizing: border-box;
+@media screen and (min-width: 900px) {
+  /* line 10, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php .theme-container .page-content {
+    display: none;
+  }
 }
-/* line 19, ../sass/_homepage-slider.scss */
+/* line 15, ../sass/_homepage-slider.scss */
+.page-template-homepage-php #main-header[role=banner] {
+  position: absolute;
+  top: 1em;
+}
+@media screen and (max-width: 900px) {
+  /* line 15, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php #main-header[role=banner] {
+    top: auto;
+    position: relative;
+  }
+}
+/* line 23, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area {
   position: absolute;
   overflow: hidden;
@@ -2690,18 +2900,46 @@ button {
   min-height: 100%;
   z-index: 0;
 }
-/* line 28, ../sass/_homepage-slider.scss */
+@media screen and (max-width: 900px) {
+  /* line 23, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php .homepage-featured-area {
+    position: relative;
+    height: 700px !important;
+  }
+}
+@media screen and (max-width: 700px) {
+  /* line 23, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php .homepage-featured-area {
+    position: relative;
+    height: 500px !important;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 23, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php .homepage-featured-area {
+    position: relative;
+    height: 200px !important;
+  }
+}
+@media screen and (max-width: 350px) {
+  /* line 23, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php .homepage-featured-area {
+    position: relative;
+    height: 150px !important;
+  }
+}
+/* line 48, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area li a {
   width: 100%;
   height: 100%;
 }
-/* line 32, ../sass/_homepage-slider.scss */
+/* line 52, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .homepage-button {
   height: 44px;
   top: 0;
   right: 24px;
 }
-/* line 37, ../sass/_homepage-slider.scss */
+/* line 57, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid {
   width: 100%;
   margin: 0;
@@ -2710,27 +2948,23 @@ button {
   position: absolute;
   text-align: center;
 }
-/* line 44, ../sass/_homepage-slider.scss */
+/* line 64, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid.centered {
   width: 60%;
   margin: 100px 20%;
 }
-/* line 51, ../sass/_homepage-slider.scss */
-.page-template-homepage-php .homepage-featured-area #slider-nav {
-  position: fixed;
-  bottom: -1px;
-  width: 50%;
-  left: 25%;
-  text-align: center;
-  z-index: 1000;
-}
-/* line 58, ../sass/_homepage-slider.scss */
+/* line 73, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
-  padding: 0 12px 8px;
-  background: #fff;
+  position: absolute;
+  z-index: 1000;
+  font-family: "ArialBlack";
+  padding: 0 10px 8px;
+  background-color: #555;
+  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+  background-repeat: repeat;
   margin: 0 10px 0px;
   text-transform: uppercase;
-  color: #333;
+  color: #fff;
   font-weight: bold;
   font-size: 2em;
   line-height: 1;
@@ -2739,55 +2973,85 @@ button {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0);
   opacity: .5;
 }
-/* line 73, ../sass/_homepage-slider.scss */
+/* line 76, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav.next {
+  right: 0;
+  top: 50%;
+}
+/* line 80, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav.prev {
+  left: 0;
+  top: 50%;
+}
+/* line 99, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav:hover {
-  color: #400;
+  color: #eee;
   opacity: 1;
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
 }
-/* line 81, ../sass/_homepage-slider.scss */
+@media screen and (max-width: 900px) {
+  /* line 73, ../sass/_homepage-slider.scss */
+  .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
+    display: none;
+  }
+}
+/* line 110, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .frame {
   max-width: 100%;
 }
-/* line 84, ../sass/_homepage-slider.scss */
-.page-template-homepage-php #snap-nav ul {
-  border: none;
+/* line 113, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .learn-more {
+  position: absolute;
+  float: right;
+  z-index: 100;
+  top: 0;
+  right: 0;
 }
-/* line 86, ../sass/_homepage-slider.scss */
-.page-template-homepage-php #snap-nav ul li {
-  border: none;
+/* line 120, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .post-details {
+  position: fixed;
+  bottom: 30px;
+  right: 0;
+  padding: 5px;
+  background-color: #555;
+  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+  background-repeat: repeat;
 }
-/* line 89, ../sass/_homepage-slider.scss */
-.page-template-homepage-php #snap-nav ul li a {
-  max-height: 40px;
+/* line 126, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .post-details .post-title {
+  color: #eee;
+  font-size: 2.5em;
+  text-transform: uppercase;
+  margin: 0;
 }
-/* line 92, ../sass/_homepage-slider.scss */
-.page-template-homepage-php #snap-nav ul li ul {
-  border: none;
+/* line 133, ../sass/_homepage-slider.scss */
+.page-template-homepage-php .post-details .post-description {
+  color: #eee;
+  font-family: "ArialBlack";
+  margin-bottom: 5px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 101, ../sass/_homepage-slider.scss */
+  /* line 145, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     min-height: 0;
-    height: 300px !important;
   }
-  /* line 105, ../sass/_homepage-slider.scss */
+  /* line 149, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area img {
     height: auto;
   }
-  /* line 108, ../sass/_homepage-slider.scss */
+  /* line 152, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area .slider-vid {
     display: none;
   }
-  /* line 111, ../sass/_homepage-slider.scss */
+  /* line 155, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area #slider-nav {
     position: absolute;
     bottom: 10px;
   }
 
-  /* line 121, ../sass/_homepage-slider.scss */
+  /* line 165, ../sass/_homepage-slider.scss */
   .page-content.frame {
     box-sizing: border-box;
     padding: 24px;
