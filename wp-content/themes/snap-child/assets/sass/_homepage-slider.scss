@@ -14,7 +14,6 @@
 	}
 	#main-header[role=banner]{
 		position: absolute;
-		top: 1em;
 		@media screen and (max-width: 900px){
 			top: auto;
 			position: relative;

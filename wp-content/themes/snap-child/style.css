@@ -2681,8 +2681,8 @@ body #main-header[role=banner] {
   background-color: #555;
   background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
   background-repeat: repeat;
-  height: 59px;
-  padding: 2px;
+  height: 58px;
+  padding: 2px 2px 0px 4px;
   top: 0;
 }
 @media screen and (max-width: 900px) {
@@ -2808,16 +2808,17 @@ body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .s
 }
 /* line 112, ../sass/_main-header.scss */
 body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
-  color: #eee;
+  color: #ddd;
   font-size: 1.5em;
-  -webkit-transition: color .5s;
-  transition: color .5s;
+  -webkit-transition: color .5s, text-shadow .3s ease-in-out;
+  transition: color .5s, text-shadow .3s ease-in-out;
 }
 /* line 117, ../sass/_main-header.scss */
 body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:hover {
-  color: #fff;
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7), 0 1px 0 white, 0 2px 1px rgba(0, 0, 0, 0.7), 0 2px 0 white, 0 3px 1px rgba(0, 0, 0, 0.7), 0 3px 0 white, 0 4px 1px rgba(0, 0, 0, 0.7), 0 4px 0 white, 0 5px 1px rgba(0, 0, 0, 0.7), 0 5px 0 white, 0 -1px 0 white;
 }
-/* line 120, ../sass/_main-header.scss */
+/* line 122, ../sass/_main-header.scss */
 body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:active {
   color: #e5e5e5;
 }
@@ -2846,18 +2847,18 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:
     z-index: 0;
   }
 }
-/* line 144, ../sass/_main-header.scss */
+/* line 146, ../sass/_main-header.scss */
 body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
   margin-top: 0;
   color: #fff;
   display: none;
 }
 
-/* line 154, ../sass/_main-header.scss */
+/* line 156, ../sass/_main-header.scss */
 #mobile-toggle span {
   font-family: "ArialBlack";
 }
-/* line 157, ../sass/_main-header.scss */
+/* line 159, ../sass/_main-header.scss */
 #mobile-toggle span:before {
   color: #fff;
 }
@@ -2880,7 +2881,6 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
 /* line 15, ../sass/_homepage-slider.scss */
 .page-template-homepage-php #main-header[role=banner] {
   position: absolute;
-  top: 1em;
 }
 @media screen and (max-width: 900px) {
   /* line 15, ../sass/_homepage-slider.scss */
@@ -2889,7 +2889,7 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
     position: relative;
   }
 }
-/* line 23, ../sass/_homepage-slider.scss */
+/* line 22, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area {
   position: absolute;
   overflow: hidden;
@@ -2901,45 +2901,45 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
   z-index: 0;
 }
 @media screen and (max-width: 900px) {
-  /* line 23, ../sass/_homepage-slider.scss */
+  /* line 22, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     height: 700px !important;
   }
 }
 @media screen and (max-width: 700px) {
-  /* line 23, ../sass/_homepage-slider.scss */
+  /* line 22, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     height: 500px !important;
   }
 }
 @media screen and (max-width: 400px) {
-  /* line 23, ../sass/_homepage-slider.scss */
+  /* line 22, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     height: 200px !important;
   }
 }
 @media screen and (max-width: 350px) {
-  /* line 23, ../sass/_homepage-slider.scss */
+  /* line 22, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     height: 150px !important;
   }
 }
-/* line 48, ../sass/_homepage-slider.scss */
+/* line 47, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area li a {
   width: 100%;
   height: 100%;
 }
-/* line 52, ../sass/_homepage-slider.scss */
+/* line 51, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .homepage-button {
   height: 44px;
   top: 0;
   right: 24px;
 }
-/* line 57, ../sass/_homepage-slider.scss */
+/* line 56, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid {
   width: 100%;
   margin: 0;
@@ -2948,12 +2948,12 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
   position: absolute;
   text-align: center;
 }
-/* line 64, ../sass/_homepage-slider.scss */
+/* line 63, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid.centered {
   width: 60%;
   margin: 100px 20%;
 }
-/* line 73, ../sass/_homepage-slider.scss */
+/* line 72, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
   position: absolute;
   z-index: 1000;
@@ -2973,33 +2973,33 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0);
   opacity: .5;
 }
-/* line 76, ../sass/_homepage-slider.scss */
+/* line 75, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav.next {
   right: 0;
   top: 50%;
 }
-/* line 80, ../sass/_homepage-slider.scss */
+/* line 79, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav.prev {
   left: 0;
   top: 50%;
 }
-/* line 99, ../sass/_homepage-slider.scss */
+/* line 98, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav:hover {
   color: #eee;
   opacity: 1;
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 900px) {
-  /* line 73, ../sass/_homepage-slider.scss */
+  /* line 72, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
     display: none;
   }
 }
-/* line 110, ../sass/_homepage-slider.scss */
+/* line 109, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .frame {
   max-width: 100%;
 }
-/* line 113, ../sass/_homepage-slider.scss */
+/* line 112, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .learn-more {
   position: absolute;
   float: right;
@@ -3007,7 +3007,7 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
   top: 0;
   right: 0;
 }
-/* line 120, ../sass/_homepage-slider.scss */
+/* line 119, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .post-details {
   position: fixed;
   bottom: 30px;
@@ -3017,14 +3017,14 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
   background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
   background-repeat: repeat;
 }
-/* line 126, ../sass/_homepage-slider.scss */
+/* line 125, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .post-details .post-title {
   color: #eee;
   font-size: 2.5em;
   text-transform: uppercase;
   margin: 0;
 }
-/* line 133, ../sass/_homepage-slider.scss */
+/* line 132, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .post-details .post-description {
   color: #eee;
   font-family: "ArialBlack";
@@ -3032,26 +3032,26 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 145, ../sass/_homepage-slider.scss */
+  /* line 144, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     min-height: 0;
   }
-  /* line 149, ../sass/_homepage-slider.scss */
+  /* line 148, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area img {
     height: auto;
   }
-  /* line 152, ../sass/_homepage-slider.scss */
+  /* line 151, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area .slider-vid {
     display: none;
   }
-  /* line 155, ../sass/_homepage-slider.scss */
+  /* line 154, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area #slider-nav {
     position: absolute;
     bottom: 10px;
   }
 
-  /* line 165, ../sass/_homepage-slider.scss */
+  /* line 164, ../sass/_homepage-slider.scss */
   .page-content.frame {
     box-sizing: border-box;
     padding: 24px;
