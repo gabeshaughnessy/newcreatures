@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.8" created="2014-01-20 00:54" -->
+<!-- generator="WordPress/3.8" created="2014-01-21 01:48" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>New Creatures</title>
 	<link>http://newcreatures.local</link>
 	<description>A collective of experience designers, expert producers, and dreamers.</description>
-	<pubDate>Mon, 20 Jan 2014 00:54:58 +0000</pubDate>
+	<pubDate>Tue, 21 Jan 2014 01:48:37 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
 	<wp:base_site_url>http://newcreatures.local</wp:base_site_url>
@@ -79,7 +79,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"post";s:8:"order_no";i:0;s:8:"group_no";i:0;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"post";s:8:"order_no";i:0;s:8:"group_no";i:2;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
@@ -87,7 +87,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>rule</wp:meta_key>
-			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:7:"project";s:8:"order_no";i:0;s:8:"group_no";i:2;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:5:{s:5:"param";s:9:"post_type";s:8:"operator";s:2:"==";s:5:"value";s:4:"post";s:8:"order_no";i:0;s:8:"group_no";i:0;}]]></wp:meta_value>
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>position</wp:meta_key>
@@ -103,7 +103,7 @@
 		</wp:postmeta>
 		<wp:postmeta>
 			<wp:meta_key>field_52d216db7bf28</wp:meta_key>
-			<wp:meta_value><![CDATA[a:13:{s:3:"key";s:19:"field_52d216db7bf28";s:5:"label";s:10:"Video Size";s:4:"name";s:10:"video_size";s:4:"type";s:5:"radio";s:12:"instructions";s:0:"";s:8:"required";s:1:"0";s:7:"choices";a:2:{s:10:"full-width";s:10:"Full Width";s:8:"centered";s:8:"Centered";}s:12:"other_choice";s:1:"0";s:17:"save_other_choice";s:1:"0";s:13:"default_value";s:0:"";s:6:"layout";s:8:"vertical";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_52d082acce559";s:8:"operator";s:2:"==";s:5:"value";s:6:"slider";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}]]></wp:meta_value>
+			<wp:meta_value><![CDATA[a:13:{s:3:"key";s:19:"field_52d216db7bf28";s:5:"label";s:10:"Video Size";s:4:"name";s:10:"video_size";s:4:"type";s:5:"radio";s:12:"instructions";s:110:"'Full-width' videos play in the next slide. 'Centered' videos get overlayed over the image on the title slide.";s:8:"required";s:1:"0";s:7:"choices";a:2:{s:10:"full-width";s:10:"Full Width";s:8:"centered";s:8:"Centered";}s:12:"other_choice";s:1:"0";s:17:"save_other_choice";s:1:"0";s:13:"default_value";s:0:"";s:6:"layout";s:8:"vertical";s:17:"conditional_logic";a:3:{s:6:"status";s:1:"0";s:5:"rules";a:1:{i:0;a:3:{s:5:"field";s:19:"field_52d082acce559";s:8:"operator";s:2:"==";s:5:"value";s:6:"slider";}}s:8:"allorany";s:3:"all";}s:8:"order_no";i:2;}]]></wp:meta_value>
 		</wp:postmeta>
 	</item>
 	<item>

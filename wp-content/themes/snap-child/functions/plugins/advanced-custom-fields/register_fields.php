@@ -1,4 +1,4 @@
-<?php
+<?php 
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -229,6 +229,7 @@ if(function_exists("register_field_group"))
 				'label' => 'Video Size',
 				'name' => 'video_size',
 				'type' => 'radio',
+				'instructions' => '\'Full-width\' videos play in the next slide. \'Centered\' videos get overlayed over the image on the title slide.',
 				'choices' => array (
 					'full-width' => 'Full Width',
 					'centered' => 'Centered',
@@ -299,7 +300,7 @@ if(function_exists("register_field_group"))
 				array (
 					'param' => 'post_type',
 					'operator' => '==',
-					'value' => 'project',
+					'value' => 'post',
 					'order_no' => 0,
 					'group_no' => 2,
 				),

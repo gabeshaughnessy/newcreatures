@@ -58,7 +58,7 @@ jQuery(window).resize(function(){
 								<a href="<?php echo esc_url( get_permalink( $id ) ); ?>" title="<?php echo esc_attr( strip_tags( get_the_title( $id ) ) ); ?>">
 							<?php endif; ?>
 							<?php 
-								//check if this post has a video in the custom field, if it does, check if it should be displayed in the slider, if it should, show the embed coe
+							//check if this post has a video in the custom field, if it does, check if it should be displayed in the slider, if it should, show the embed coe
 							$videos = array();
 							$video_embed = '';
 							$videos['youtube_id'] = get_field('youtube_video_id', $id);
@@ -73,8 +73,9 @@ jQuery(window).resize(function(){
 							}
 							$show_video = get_field('show_video', $id);
 							$video_size = get_field('video_size', $id);
+
 							if($show_video != false){
-							if($video_embed != '' && in_array('slider', $show_video)){
+							if($video_embed != '' && in_array('slider', $show_video) && $video_size == 'centered' ){
 								echo '<div class="slider-vid fit-vid '.$video_size.'">'.$video_embed.'</div>';
 							}}
 							echo get_the_post_thumbnail( $id, 'full' ); 
@@ -110,6 +111,11 @@ jQuery(window).resize(function(){
 								</a>
 							<?php endif; ?>
 					</li>
+					<?php
+						if($video_embed != '' && in_array('slider', $show_video) && $video_size == 'full-width' ){
+								echo '<li><a href="'.get_permalink($id).'"><div class="slider-vid fit-vid '.$video_size.'">'.$video_embed.'</div></a></li>';
+							}
+					?>
 				<?php endforeach; ?>
 			</ul>
 			<div id="slider-nav"></div>
