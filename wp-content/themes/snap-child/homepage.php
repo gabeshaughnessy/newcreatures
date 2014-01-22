@@ -36,7 +36,7 @@ jQuery(window).resize(function(){
 		<?php $slider_post_ids = ( current_user_can( 'edit_theme_options' ) ) ? $featured_area->all_possible_slider_posts : $featured_area->slider_posts_with_post_thumbnails; ?>
 		<section class="homepage-featured-area frame">
 			<ul class="homepage-featured-area<?php if ( 'slider' === $featured_area->display_type_for_current_user ) : ?> homepage-featured-area-slides<?php endif;?>">
-                <li>
+                <li class="intro-slide">
                     <?php if ( ! $featured_area->post_is_this_page( $post->ID ) ) : ?>
                             <a href="<?php echo esc_url( get_permalink( $post->ID ) ); ?>" title="<?php echo esc_attr( strip_tags( get_the_title( $post->ID ) ) ); ?>">
                     <?php endif; ?>

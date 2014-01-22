@@ -8,7 +8,9 @@ jQuery(document).ready(function($){
 			var container =  jQuery(this).parent('a').parent('li').find('.slider-vid');
 			thePlayer.appendTo(container);
 		});
+
 	});
+
 
 //KEYBOARD EVENTS
 
