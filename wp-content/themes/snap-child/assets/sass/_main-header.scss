@@ -109,9 +109,10 @@ body {
 		}
 		.logo-wrapper{
 			.snap-site-title{
+				font-size: 48px;
 				a{
 					color: #ddd;
-					font-size: 1.5em;
+					font-size: 1em;
 					-webkit-transition: color .5s, text-shadow .3s ease-in-out;
 					transition: color .5s, text-shadow .3s ease-in-out;
 					&:hover{
@@ -123,11 +124,11 @@ body {
 						color: #e5e5e5;
 					}
 					@media screen and (max-width: 1024px){
-						font-size:1.35em;
+						font-size:42px;
 						line-height: 1.2;
 					}
 					@media screen and (max-width: 400px){
-						font-size:1em;
+						font-size:32px;
 						line-height: 1.5em;
 					}
 
