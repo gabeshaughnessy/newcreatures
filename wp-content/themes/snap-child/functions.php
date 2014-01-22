@@ -60,13 +60,13 @@ add_image_size( 'full-screen', 1600, 9999 );
 //RESPONSIVE SLIDER OPTIONS
 function mySliderOptions(){
     $responsive_slides_options = array(
-        'timeout' => 1000,
-        'auto' => false,
+        'timeout' => 6000,
+        'auto' => true,
         'nav'  => true,
         'pause' => true,
         'prevText'=> '&#171;',   // String: Text for the "previous" button
         'nextText' => '&#187;', 
-        'navContainer' => '#slider-nav'
+        'navContainer' => '#slider-nav', 
       
     );
     return $responsive_slides_options;
