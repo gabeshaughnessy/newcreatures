@@ -44,6 +44,14 @@ jQuery(window).resize(function(){
                     $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
                     echo '<img src="'.$image_url[0].'" width="100%" height="auto" />.';
                     // echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
+					
+					<?php 
+					//display the page content 
+						if(get_the_content($post->ID) != ''){
+							echo '<div class="intro-content">'.get_the_content($post->ID).'</div>';
+						}
+					?>
+
                     <?php if ( ! $featured_area->post_is_this_page( $post->ID ) ) : ?>
                                     <?php $button_text =  apply_filters( 'snap_button_text', get_theme_mod( 'button-text', __( 'View Project', 'snap' ) ), $post->ID, get_the_ID() ); ?>
                                     <?php if ( '' !== $button_text ) : ?>
