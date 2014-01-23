@@ -40,7 +40,7 @@
 						</div>
 					</nav>
 				</div>
-				<?php comments_template( '', true ); ?>
+				
 			<?php endwhile; ?>
 			<nav class="post-footer pagination">
 				<?php if ( ( get_adjacent_post( false, '', true ) || get_adjacent_post( false, '', false ) ) ) : ?>
