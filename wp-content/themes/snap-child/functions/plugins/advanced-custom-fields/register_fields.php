@@ -63,7 +63,7 @@ if(function_exists("register_field_group"))
 				'name' => 'portfolio_producer',
 				'type' => 'checkbox',
 				'choices' => array (
-					'Ajumu White' => 'Ajumu White',
+					'Ajamu White' => 'Ajamu White',
 					'Jason Naumoff' => 'Jason Naumoff',
 					'Adam Aleksander' => 'Adam Aleksander',
 				),
@@ -76,7 +76,7 @@ if(function_exists("register_field_group"))
 				'name' => 'portfolio_director',
 				'type' => 'checkbox',
 				'choices' => array (
-					'Ajumu White' => 'Ajumu White',
+					'Ajamu White' => 'Ajamu White',
 					'Jason Naumoff' => 'Jason Naumoff',
 					'Adam Aleksander' => 'Adam Aleksander',
 				),
