@@ -15,7 +15,7 @@ if ( 'object' === typeof snapResponsiveSlidesOptions ) {
 	jQuery( '.homepage-featured-area-slides' ).responsiveSlides( snapResponsiveSlidesOptions );
 } 
 
-});//end document ready
+
 
 function stopVideos(){
 		var vidPlayers = jQuery('.slider-vid');
@@ -54,3 +54,4 @@ jQuery('body').keydown(function(e){
 });//end keydown events
 //end KEYBOARD EVENTS
 
+});//end document ready
