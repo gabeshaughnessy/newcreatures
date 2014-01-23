@@ -57,21 +57,7 @@ function add_category_to_single($classes) {
 add_image_size( 'full-screen', 1600, 9999 );
 
 
-//RESPONSIVE SLIDER OPTIONS
-function mySliderOptions(){
-    $responsive_slides_options = array(
-        'timeout' => 6000,
-        'auto' => true,
-        'nav'  => true,
-        'pause' => true,
-        'prevText'=> '&#171;',   // String: Text for the "previous" button
-        'nextText' => '&#187;', 
-        'navContainer' => '#slider-nav', 
-      
-    );
-    return $responsive_slides_options;
-}
-$responsive_slides_options = add_filter( 'responsive_slides_options', 'mySliderOptions', 10,1);
+
 
 //ENQUEUE ADDITIONAL JAVASCRIPTS
 //wp_enqueue_script( $handle, $src, $deps, $ver, $in_footer );

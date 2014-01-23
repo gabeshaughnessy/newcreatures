@@ -4,7 +4,33 @@
  * @package Snap
  */
 ?>
-<?php get_header(); ?>
+<?php get_header(); 
+
+//RESPONSIVE SLIDER OPTIONS
+function mySliderOptions(){
+  global $post; 
+  $slider_auto = get_field('slider_auto', $post->ID);
+  if(!isset($slider_auto)){
+  	$slider_auto = "false";
+  } 
+  $slider_speed = get_field('slider_speed', $post->ID);
+  if(!isset($slider_auto)){
+  	$slider_speed = 1000;
+  }
+    $responsive_slides_options = array(
+        'timeout' => $slider_speed,
+        'auto' => $slider_auto,
+        'nav'  => true,
+        'pause' => true,
+        'prevText'=> '&#171;',   // String: Text for the "previous" button
+        'nextText' => '&#187;', 
+        'navContainer' => '#slider-nav', 
+      
+    );
+    return $responsive_slides_options;
+}
+$responsive_slides_options = add_filter( 'responsive_slides_options', 'mySliderOptions', 10,1);
+?>
 <script type="text/javascript">
 
 function resizeSlider(element){
