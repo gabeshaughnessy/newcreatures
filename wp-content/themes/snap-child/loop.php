@@ -10,6 +10,9 @@
 				if(is_category('profile')){
 					get_template_part('_profile-content'  );
 				}
+				else if(is_category('press')){
+					get_template_part('_press-content'  );
+				}
 				else{
 					get_template_part( '_post-content' );
 				}

@@ -2700,6 +2700,19 @@ button {
     margin-right: 0;
   }
 }
+/* line 1, ../sass/_press-post.scss */
+.press-post {
+  height: auto !important;
+}
+/* line 3, ../sass/_press-post.scss */
+.press-post .post-wrapper {
+  height: auto !important;
+}
+/* line 6, ../sass/_press-post.scss */
+.press-post .grid-thumb-wrapper {
+  margin-right: 1em;
+}
+
 /* line 3, ../sass/_main-header.scss */
 body #main-header[role=banner] {
   border: none;

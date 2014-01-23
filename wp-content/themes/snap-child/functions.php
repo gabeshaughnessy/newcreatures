@@ -70,6 +70,7 @@ add_action('wp_enqueue_scripts', 'nc_scripts');
 
 //ADD IMAGE SIZES 
 add_image_size( 'profile-grid', 800, 450, false );
+add_image_size( 'press-grid', 400, 450, false );
 
 
 function get_cat_slug($cat_id) {
