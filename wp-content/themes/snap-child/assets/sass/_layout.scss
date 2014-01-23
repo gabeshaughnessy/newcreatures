@@ -3,10 +3,18 @@ body {
 	.theme-container {
 	//OVERRIDE FOR FULL WIDTH
 	padding: 2rem 5px;
+
 }
 .frame {
 	max-width: 100%;
 	margin: 0 auto;
 	@extend .clear;
+}
+
+@media screen and (min-width: 1024px){
+	.frame {
+	max-width: 1024px;
+	margin: 0 auto;
+}
 }
 }

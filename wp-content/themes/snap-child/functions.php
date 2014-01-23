@@ -66,4 +66,15 @@ function nc_scripts(){
 wp_enqueue_script('child-theme', get_bloginfo("stylesheet_directory").'/assets/javascripts/child-theme.js', array( 'jquery' ), false);
 }
 add_action('wp_enqueue_scripts', 'nc_scripts');
+
+
+//ADD IMAGE SIZES 
+add_image_size( 'profile-grid', 800, 450, false );
+
+
+function get_cat_slug($cat_id) {
+    $cat_id = (int) $cat_id;
+    $category = &get_category($cat_id);
+    return $category->slug;
+}
 ?>

@@ -80,11 +80,11 @@
 .with-thumb .grid-content-wrapper {
 	height: auto;
 	@include for(small-screens) {
-		height:86px;
+		//height:86px;
 		overflow: hidden;
 	}
 	@include for(medium-screens) {
-		height:150px;
+		//height:150px;
 		overflow: hidden;
 	}
 }

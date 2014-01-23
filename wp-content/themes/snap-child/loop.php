@@ -6,7 +6,14 @@
 <?php if ( have_posts() ) : ?>
 	<div class="blog-wrapper" id="content">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( '_post-content' ); ?>
+			<?php 
+				if(is_category('profile')){
+					get_template_part('_profile-content'  );
+				}
+				else{
+					get_template_part( '_post-content' );
+				}
+	 ?>
 		<?php endwhile; ?>
 	</div>
 

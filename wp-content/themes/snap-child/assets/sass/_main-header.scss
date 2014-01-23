@@ -17,8 +17,11 @@ body {
 		padding: 0;
 	}
 	.header-wrapper{
-		width: 100% !important;
+		width: 100%;
 		max-width: 100%;
+		@media screen and (min-width: 1024px){
+			max-width: 1024px !important;
+		}
 		#nav{
 			position: relative;
 			z-index: 1;

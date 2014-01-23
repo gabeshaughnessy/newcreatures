@@ -25,7 +25,7 @@ if ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) {
  * Set the theme's content width.
  */
 if ( ! isset( $content_width ) ) {
-	$content_width = 651;
+	$content_width = 951;
 }
 
 if ( ! function_exists( 'snap_setup' ) ) :

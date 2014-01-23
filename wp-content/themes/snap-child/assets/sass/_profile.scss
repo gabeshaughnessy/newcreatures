@@ -1,6 +1,29 @@
 /*---------------------------------------------------------
  Profile template (_pages.scss)
 -------------------------------------------------------- */
+//PROFILE GRID ON ARCHIVE VIEW
+.profile-post{
+   height: auto !important;
+  .post-wrapper{
+    height: auto !important;
+  }
+.grid-thumb-wrapper{
+  margin-right: 1em;
+@media screen and (min-width: 900px){
+  float: left;
+}
+}
+.grid-content-wrapper{
+  //height: 100%;
+}
+&.post:nth-child(1), &.post:nth-child(2){
+ // height: auto;
+  .post-wrapper{
+   // height: auto;
+  }
+}
+}
+
 @media screen and (min-width: 900px) {
   .profile .mobile-element {
     display: none;
