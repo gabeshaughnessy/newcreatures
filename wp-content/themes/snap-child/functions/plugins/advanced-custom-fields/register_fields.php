@@ -1,4 +1,4 @@
-<?php 
+<?php
 if(function_exists("register_field_group"))
 {
 	register_field_group(array (
@@ -195,6 +195,51 @@ if(function_exists("register_field_group"))
 		'options' => array (
 			'position' => 'normal',
 			'layout' => 'no_box',
+			'hide_on_screen' => array (
+			),
+		),
+		'menu_order' => 0,
+	));
+	register_field_group(array (
+		'id' => 'acf_slider-options',
+		'title' => 'Slider Options',
+		'fields' => array (
+			array (
+				'key' => 'field_52e0b6c80809f',
+				'label' => 'Auto Advance?',
+				'name' => 'slider_auto',
+				'type' => 'true_false',
+				'message' => '',
+				'default_value' => 0,
+			),
+			array (
+				'key' => 'field_52e0b6f4080a0',
+				'label' => 'Speed (miliseconds)',
+				'name' => 'slider_speed',
+				'type' => 'number',
+				'default_value' => 5000,
+				'placeholder' => '',
+				'prepend' => '',
+				'append' => '',
+				'min' => 0,
+				'max' => '',
+				'step' => 500,
+			),
+		),
+		'location' => array (
+			array (
+				array (
+					'param' => 'page_template',
+					'operator' => '==',
+					'value' => 'homepage.php',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array (
+			'position' => 'side',
+			'layout' => 'default',
 			'hide_on_screen' => array (
 			),
 		),

@@ -16,7 +16,7 @@
 <!-- 7. WordPress will then import each of the posts, pages, comments, categories, etc. -->
 <!--    contained in this file into your site. -->
 
-<!-- generator="WordPress/3.8" created="2014-01-23 06:42" -->
+<!-- generator="WordPress/3.8" created="2014-01-23 07:46" -->
 <rss version="2.0"
 	xmlns:excerpt="http://wordpress.org/export/1.1/excerpt/"
 	xmlns:content="http://purl.org/rss/1.0/modules/content/"
@@ -29,7 +29,7 @@
 	<title>New Creatures</title>
 	<link>http://newcreatures.local</link>
 	<description>A collective of experience designers, expert producers, and dreamers.</description>
-	<pubDate>Thu, 23 Jan 2014 06:42:41 +0000</pubDate>
+	<pubDate>Thu, 23 Jan 2014 07:46:24 +0000</pubDate>
 	<language></language>
 	<wp:wxr_version>1.1</wp:wxr_version>
 	<wp:base_site_url>http://newcreatures.local</wp:base_site_url>
