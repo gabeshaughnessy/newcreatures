@@ -1785,6 +1785,202 @@ div .aligncenter {
   margin-bottom: 1.22222rem;
 }
 
+/* line 3, ../sass/_main-header.scss */
+body #main-header[role=banner] {
+  border: none;
+  position: relative;
+  z-index: 1000;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #555;
+  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+  background-repeat: repeat;
+  height: 58px;
+  padding: 2px 2px 0px 4px;
+  top: 0;
+}
+@media screen and (max-width: 900px) {
+  /* line 3, ../sass/_main-header.scss */
+  body #main-header[role=banner] {
+    top: auto;
+    background-color: transparent;
+    padding: 0;
+  }
+}
+/* line 19, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper {
+  width: 100%;
+  max-width: 100%;
+}
+/* line 23, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav {
+  position: relative;
+  z-index: 1;
+}
+/* line 27, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav {
+  border: none;
+  margin-right: 4em;
+  margin-top: 9px;
+}
+/* line 29, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .snap-menu-parent-item {
+  border: none;
+}
+/* line 37, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item {
+  border: none;
+}
+/* line 40, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
+  font-family: 'ArialBlack';
+  font-weight: bold;
+  font-size: 18px;
+  color: #eee;
+  max-height: 40px;
+  border-bottom: none;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media screen and (max-width: 900px) {
+  /* line 40, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
+    background-color: #555;
+    background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 40, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
+    padding: 1em 2em;
+    font-size: 1em;
+  }
+}
+/* line 60, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item:hover > a {
+  color: #fff;
+  text-shadow: 0 0 1px white;
+}
+/* line 64, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
+  border: none;
+  background-color: #555;
+  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+  background-repeat: repeat;
+}
+@media screen and (max-width: 900px) {
+  /* line 64, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
+    text-indent: 1.5em;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 64, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
+    text-indent: .3em;
+  }
+}
+/* line 73, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item {
+  border: none;
+}
+/* line 76, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item a {
+  line-height: 1.2;
+  font-size: 14px;
+  color: #aaa;
+  margin-bottom: 4px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+@media screen and (max-width: 900px) {
+  /* line 76, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item a {
+    margin-bottom: 0;
+  }
+}
+/* line 89, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item:hover a {
+  color: #fff;
+  text-shadow: 0 0 1px white;
+}
+@media screen and (max-width: 900px) {
+  /* line 97, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .current-menu-item a {
+    background-color: #555;
+    background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
+    background-repeat: repeat;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 27, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav {
+    margin-right: 0;
+    margin-top: 0;
+  }
+}
+/* line 112, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title {
+  font-size: 48px;
+}
+/* line 114, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
+  color: #ddd;
+  font-size: 1em;
+  -webkit-transition: color .5s, text-shadow .3s ease-in-out;
+  transition: color .5s, text-shadow .3s ease-in-out;
+}
+/* line 119, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:hover {
+  color: #eee;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7), 0 1px 0 white, 0 2px 1px rgba(0, 0, 0, 0.7), 0 2px 0 white, 0 3px 1px rgba(0, 0, 0, 0.7), 0 3px 0 white, 0 4px 1px rgba(0, 0, 0, 0.7), 0 4px 0 white, 0 5px 1px rgba(0, 0, 0, 0.7), 0 5px 0 white, 0 -1px 0 white;
+}
+/* line 124, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:active {
+  color: #e5e5e5;
+}
+@media screen and (max-width: 1024px) {
+  /* line 114, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
+    font-size: 42px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 400px) {
+  /* line 114, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
+    font-size: 32px;
+    line-height: 1.5em;
+  }
+}
+@media screen and (max-width: 900px) {
+  /* line 112, ../sass/_main-header.scss */
+  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title {
+    padding: 4px 0 0 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 0;
+  }
+}
+/* line 148, ../sass/_main-header.scss */
+body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
+  margin-top: 0;
+  color: #fff;
+  display: none;
+}
+
+/* line 158, ../sass/_main-header.scss */
+#mobile-toggle span {
+  font-family: "ArialBlack";
+}
+/* line 161, ../sass/_main-header.scss */
+#mobile-toggle span:before {
+  color: #fff;
+}
+
 /* line 3, ../sass/_layout.scss */
 body .theme-container {
   padding: 2rem 5px;
@@ -1800,6 +1996,21 @@ body .frame {
     max-width: 1024px;
     margin: 0 auto;
   }
+  /* line 19, ../sass/_layout.scss */
+  body .header-wrapper {
+    max-width: 1024px !important;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  /* line 26, ../sass/_layout.scss */
+  body.page-template-homepage-php .header-wrapper {
+    max-width: 100% !important;
+  }
+}
+/* line 32, ../sass/_layout.scss */
+body.page-template-homepage-php .frame {
+  max-width: 100% !important;
 }
 
 /*---------------------------------------------------------
@@ -2711,208 +2922,6 @@ button {
 /* line 6, ../sass/_press-post.scss */
 .press-post .grid-thumb-wrapper {
   margin-right: 1em;
-}
-
-/* line 3, ../sass/_main-header.scss */
-body #main-header[role=banner] {
-  border: none;
-  position: relative;
-  z-index: 1000;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: #555;
-  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
-  background-repeat: repeat;
-  height: 58px;
-  padding: 2px 2px 0px 4px;
-  top: 0;
-}
-@media screen and (max-width: 900px) {
-  /* line 3, ../sass/_main-header.scss */
-  body #main-header[role=banner] {
-    top: auto;
-    background-color: transparent;
-    padding: 0;
-  }
-}
-/* line 19, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper {
-  width: 100%;
-  max-width: 100%;
-}
-@media screen and (min-width: 1024px) {
-  /* line 19, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper {
-    max-width: 1024px !important;
-  }
-}
-/* line 25, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav {
-  position: relative;
-  z-index: 1;
-}
-/* line 29, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav {
-  border: none;
-  margin-right: 4em;
-  margin-top: 9px;
-}
-/* line 31, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .snap-menu-parent-item {
-  border: none;
-}
-/* line 39, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item {
-  border: none;
-}
-/* line 42, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
-  font-family: 'ArialBlack';
-  font-weight: bold;
-  font-size: 18px;
-  color: #eee;
-  max-height: 40px;
-  border-bottom: none;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-@media screen and (max-width: 900px) {
-  /* line 42, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
-    background-color: #555;
-    background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
-    background-repeat: repeat;
-  }
-}
-@media screen and (max-width: 400px) {
-  /* line 42, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item a {
-    padding: 1em 2em;
-    font-size: 1em;
-  }
-}
-/* line 62, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item:hover > a {
-  color: #fff;
-  text-shadow: 0 0 1px white;
-}
-/* line 66, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
-  border: none;
-  background-color: #555;
-  background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
-  background-repeat: repeat;
-}
-@media screen and (max-width: 900px) {
-  /* line 66, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
-    text-indent: 1.5em;
-  }
-}
-@media screen and (max-width: 400px) {
-  /* line 66, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu {
-    text-indent: .3em;
-  }
-}
-/* line 75, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item {
-  border: none;
-}
-/* line 78, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item a {
-  line-height: 1.2;
-  font-size: 14px;
-  color: #aaa;
-  margin-bottom: 4px;
-  -webkit-transition: all .5s;
-  transition: all .5s;
-}
-@media screen and (max-width: 900px) {
-  /* line 78, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item a {
-    margin-bottom: 0;
-  }
-}
-/* line 91, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .sub-menu .menu-item:hover a {
-  color: #fff;
-  text-shadow: 0 0 1px white;
-}
-@media screen and (max-width: 900px) {
-  /* line 99, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .current-menu-item a {
-    background-color: #555;
-    background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
-    background-repeat: repeat;
-  }
-}
-@media screen and (max-width: 900px) {
-  /* line 29, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav {
-    margin-right: 0;
-    margin-top: 0;
-  }
-}
-/* line 114, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title {
-  font-size: 48px;
-}
-/* line 116, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
-  color: #ddd;
-  font-size: 1em;
-  -webkit-transition: color .5s, text-shadow .3s ease-in-out;
-  transition: color .5s, text-shadow .3s ease-in-out;
-}
-/* line 121, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:hover {
-  color: #eee;
-  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.7), 0 1px 0 white, 0 2px 1px rgba(0, 0, 0, 0.7), 0 2px 0 white, 0 3px 1px rgba(0, 0, 0, 0.7), 0 3px 0 white, 0 4px 1px rgba(0, 0, 0, 0.7), 0 4px 0 white, 0 5px 1px rgba(0, 0, 0, 0.7), 0 5px 0 white, 0 -1px 0 white;
-}
-/* line 126, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:active {
-  color: #e5e5e5;
-}
-@media screen and (max-width: 1024px) {
-  /* line 116, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
-    font-size: 42px;
-    line-height: 1.2;
-  }
-}
-@media screen and (max-width: 400px) {
-  /* line 116, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
-    font-size: 32px;
-    line-height: 1.5em;
-  }
-}
-@media screen and (max-width: 900px) {
-  /* line 114, ../sass/_main-header.scss */
-  body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title {
-    padding: 4px 0 0 0;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    z-index: 0;
-  }
-}
-/* line 150, ../sass/_main-header.scss */
-body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-tagline {
-  margin-top: 0;
-  color: #fff;
-  display: none;
-}
-
-/* line 160, ../sass/_main-header.scss */
-#mobile-toggle span {
-  font-family: "ArialBlack";
-}
-/* line 163, ../sass/_main-header.scss */
-#mobile-toggle span:before {
-  color: #fff;
 }
 
 /* HOMEPAGE SLIDER TEMPLATE_________________________ */

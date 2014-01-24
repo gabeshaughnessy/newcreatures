@@ -13,8 +13,23 @@ body {
 
 @media screen and (min-width: 1024px){
 	.frame {
-	max-width: 1024px;
-	margin: 0 auto;
+		max-width: 1024px;
+		margin: 0 auto;
+	}
+	.header-wrapper {
+			max-width: 1024px !important;
+	}
 }
 }
+
+body.page-template-homepage-php {
+	.header-wrapper {
+		@media screen and (min-width: 1024px){
+			max-width: 100% !important;
+			
+		}
+	}
+	.frame {
+		max-width: 100% !important;
+	}
 }
