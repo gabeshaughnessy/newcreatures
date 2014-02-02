@@ -1,6 +1,9 @@
 jQuery(document).ready(function($){
 
-	
+// no-link items
+jQuery('body').on('click', '.no-link', function(e){
+	e.preventDefault();
+});	
 	//Responsive slider nav callbacks;
 
 	jQuery('#slider-nav').on('click', '.rslides_nav', function(){
