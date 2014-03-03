@@ -45,7 +45,7 @@ else{ ?>
 			<?php else : ?>
 				<h1 class="snap-site-title">
 					<a title="<?php esc_attr_e( 'Home', 'snap' ); ?>" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-						<?php bloginfo( 'name' ); ?>:
+						<?php bloginfo( 'name' ); ?>
 					</a>
 				</h1>
 			<?php endif; ?>
