@@ -1,4 +1,4 @@
-/*
+/*!
 
 	Theme Name: The New Creatures Snap Child
 
@@ -1922,7 +1922,7 @@ body #main-header[role=banner] .header-wrapper #nav #snap-nav .nav .menu-item .s
 }
 /* line 112, ../sass/_main-header.scss */
 body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title {
-  font-size: 48px;
+  font-size: 38px;
 }
 /* line 114, ../sass/_main-header.scss */
 body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
@@ -1943,14 +1943,14 @@ body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a:
 @media screen and (max-width: 1024px) {
   /* line 114, ../sass/_main-header.scss */
   body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
-    font-size: 42px;
+    font-size: 32px;
     line-height: 1.2;
   }
 }
 @media screen and (max-width: 400px) {
   /* line 114, ../sass/_main-header.scss */
   body #main-header[role=banner] .header-wrapper .logo-wrapper .snap-site-title a {
-    font-size: 32px;
+    font-size: 26px;
     line-height: 1.5em;
   }
 }

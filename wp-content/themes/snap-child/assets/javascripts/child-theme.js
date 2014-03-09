@@ -1,9 +1,10 @@
 jQuery(document).ready(function($){
 
+
 // no-link items
-jQuery('body').on('click', '.no-link > a', function(e){
-	e.preventDefault();
-});	
+	jQuery('body').on('click', '.no-link > a', function(e){
+		e.preventDefault();
+	});	
 	//Responsive slider nav callbacks;
 
 	jQuery('#slider-nav').on('click', '.rslides_nav', function(){
@@ -16,7 +17,14 @@ if ( 'object' === typeof snapResponsiveSlidesOptions ) {
 		stopVideos();
 	}
 	jQuery( '.homepage-featured-area-slides' ).responsiveSlides( snapResponsiveSlidesOptions );
+	jQuery('.homepage-featured-area iframe').click(function () {
+		alert('cl;icked');
+            clearInterval(rotate);
+          }, function () {
+            restartCycle();
+          });
 } 
+
 
 
 
