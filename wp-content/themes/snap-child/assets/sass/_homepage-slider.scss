@@ -106,10 +106,6 @@
 			width: 100%;
 			box-sizing: border-box;
 			padding: 25px 10px;
-			.bold{
-				font-family:"ArialBlack";
-				font-weight:bold;
-			}
 			@media screen and (max-width: 1100px){
 			font-size: .8em;
 			}
@@ -245,5 +241,8 @@
 	#footer{
 		border-top: none;
 	}
-
+.bold{
+	font-family:"ArialBlack";
+	font-weight:bold;
+}
 

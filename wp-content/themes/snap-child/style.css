@@ -3079,11 +3079,6 @@ button {
   box-sizing: border-box;
   padding: 25px 10px;
 }
-/* line 109, ../sass/_homepage-slider.scss */
-.page-template-homepage-php .homepage-featured-area .intro-content .bold {
-  font-family: "ArialBlack";
-  font-weight: bold;
-}
 @media screen and (max-width: 1100px) {
   /* line 101, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area .intro-content {
@@ -3102,13 +3097,13 @@ button {
     display: none;
   }
 }
-/* line 124, ../sass/_homepage-slider.scss */
+/* line 120, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .homepage-button {
   height: 44px;
   top: 0;
   right: 24px;
 }
-/* line 129, ../sass/_homepage-slider.scss */
+/* line 125, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid {
   width: 100%;
   margin: 0;
@@ -3117,12 +3112,12 @@ button {
   position: absolute;
   text-align: center;
 }
-/* line 136, ../sass/_homepage-slider.scss */
+/* line 132, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area .slider-vid.centered {
   width: 60%;
   margin: 100px 20%;
 }
-/* line 145, ../sass/_homepage-slider.scss */
+/* line 141, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
   position: absolute;
   z-index: 1000;
@@ -3142,33 +3137,33 @@ button {
   box-shadow: 0 0px 2px rgba(0, 0, 0, 0);
   opacity: .5;
 }
-/* line 148, ../sass/_homepage-slider.scss */
+/* line 144, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav.next {
   right: 0;
   top: 50%;
 }
-/* line 152, ../sass/_homepage-slider.scss */
+/* line 148, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav.prev {
   left: 0;
   top: 50%;
 }
-/* line 171, ../sass/_homepage-slider.scss */
+/* line 167, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav:hover {
   color: #eee;
   opacity: 1;
   box-shadow: 0 0px 1px rgba(0, 0, 0, 0.3);
 }
 @media screen and (max-width: 900px) {
-  /* line 145, ../sass/_homepage-slider.scss */
+  /* line 141, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area #slider-nav .rslides_nav {
     display: none;
   }
 }
-/* line 183, ../sass/_homepage-slider.scss */
+/* line 179, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .frame {
   max-width: 100%;
 }
-/* line 186, ../sass/_homepage-slider.scss */
+/* line 182, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .learn-more {
   position: absolute;
   float: right;
@@ -3176,7 +3171,7 @@ button {
   top: 0;
   right: 0;
 }
-/* line 193, ../sass/_homepage-slider.scss */
+/* line 189, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .post-details {
   position: fixed;
   bottom: 30px;
@@ -3186,14 +3181,14 @@ button {
   background-image: url("/wp-content/themes/snap-child/images/debut_dark.png");
   background-repeat: repeat;
 }
-/* line 199, ../sass/_homepage-slider.scss */
+/* line 195, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .post-details .post-title {
   color: #eee;
   font-size: 2.5em;
   text-transform: uppercase;
   margin: 0;
 }
-/* line 206, ../sass/_homepage-slider.scss */
+/* line 202, ../sass/_homepage-slider.scss */
 .page-template-homepage-php .post-details .post-description {
   color: #eee;
   font-family: "ArialBlack";
@@ -3201,30 +3196,36 @@ button {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 218, ../sass/_homepage-slider.scss */
+  /* line 214, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area {
     position: relative;
     min-height: 0;
   }
-  /* line 222, ../sass/_homepage-slider.scss */
+  /* line 218, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area img {
     height: auto;
   }
-  /* line 228, ../sass/_homepage-slider.scss */
+  /* line 224, ../sass/_homepage-slider.scss */
   .page-template-homepage-php .homepage-featured-area #slider-nav {
     position: absolute;
     bottom: 10px;
   }
 
-  /* line 238, ../sass/_homepage-slider.scss */
+  /* line 234, ../sass/_homepage-slider.scss */
   .page-content.frame {
     box-sizing: border-box;
     padding: 24px;
   }
 }
-/* line 245, ../sass/_homepage-slider.scss */
+/* line 241, ../sass/_homepage-slider.scss */
 #footer {
   border-top: none;
+}
+
+/* line 244, ../sass/_homepage-slider.scss */
+.bold {
+  font-family: "ArialBlack";
+  font-weight: bold;
 }
 
 /* line 1, ../sass/_splash-page.scss */
