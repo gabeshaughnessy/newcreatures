@@ -67,8 +67,18 @@ jQuery(window).resize(function(){
                             <a href="<?php echo esc_url( get_permalink( $post->ID ) ); ?>" title="<?php echo esc_attr( strip_tags( get_the_title( $post->ID ) ) ); ?>">
                     <?php endif; ?>
                     <?php
-                    $image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
-                    echo '<img src="'.$image_url[0].'" width="100%" height="auto" />.';
+                    $icons = array();
+                    $icons[] = get_bloginfo('stylesheet_directory').'/images/home-page-icon_01.png';
+                    $icons[] = get_bloginfo('stylesheet_directory').'/images/home-page-icon_02.png';
+                    $icons[] = get_bloginfo('stylesheet_directory').'/images/home-page-icon_03.png';
+
+                    echo '<img class="home-page-icon icon-0" src="'.$icons[0].'" width="20%" height="auto" />';
+                    echo '<img class="home-page-icon icon-1" src="'.$icons[1].'" width="24%" height="auto" />';
+                    echo '<img class="home-page-icon icon-2" src="'.$icons[2].'" width="25%" height="auto" />';
+                    echo '<a href=" rslides_nav rslides2_nav next" class="explore rslides2_nav next button">Enter &#8669;</a>';
+                    
+                    //$image_url = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full');
+                    //echo '<img class="home-page-icon" src="'.$image_url[0].'" width="100%" height="auto" />.';
                     // echo get_the_post_thumbnail( $post->ID, 'full' ); ?>
 					
 					<?php 

@@ -4,4 +4,4 @@
 	} else {
 		$( '.homepage-featured-area-slides' ).responsiveSlides();
 	}
-} ) ( jQuery )
+} ) ( jQuery ) 

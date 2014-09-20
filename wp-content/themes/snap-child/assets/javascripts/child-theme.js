@@ -10,15 +10,24 @@ jQuery(document).ready(function($){
 	jQuery('#slider-nav').on('click', '.rslides_nav', function(){
 		stopVideos();
 	});
-	
+
+//hide the menu for the first slide
+if(jQuery('.intro-slide').hasClass('rslides1_on')){
+	jQuery('#main-header').slideUp('fast');
+	jQuery('.rslides_nav').hide();
+}
 
 if ( 'object' === typeof snapResponsiveSlidesOptions ) {
 	snapResponsiveSlidesOptions.before = function() {
 		stopVideos();
+			jQuery('#main-header').slideDown('fast');
+			jQuery('.rslides_nav').show('fast');
+	
+			
 	}
 	jQuery( '.homepage-featured-area-slides' ).responsiveSlides( snapResponsiveSlidesOptions );
 	jQuery('.homepage-featured-area iframe').click(function () {
-		alert('cl;icked');
+
             clearInterval(rotate);
           }, function () {
             restartCycle();

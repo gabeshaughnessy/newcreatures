@@ -7,7 +7,7 @@ wp-config.php
 wp-content/uploads/
 wp-content/plugins/*
 !wp-content/plugins/new-creature-projects/
-
+*/wp-content/themes/snap-child/assets/.sass-cache/
 */themes/twentyeleven/
 */themes/twentytwelve/
 */themes/twentythirteen/
